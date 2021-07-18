@@ -12,6 +12,7 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator 
       tabBarOptions={{
+        activeTintColor: 'white',
         tabStyle: {
           justifyContent: 'center', 
           backgroundColor: '#2B2B2B'
