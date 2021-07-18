@@ -25,19 +25,19 @@ export default function App() {
         <Tab.Screen name="Home" component={Home} options={{
           tabBarLabel: 'Home',
           tabBarIcon: ({color, size}) => (
-            <Icon name="home" size={size} color='white' />
+            <Icon name="home" size={size} color={color} />
           )
           }} />
         <Tab.Screen name="Search" component={Search} options={{
           tabBarLabel: 'Search',
           tabBarIcon: ({color, size}) => (
-            <Icon name="search" size={size} color='white' />
+            <Icon name="search" size={size} color={color} />
           )
           }} />
         <Tab.Screen name="Your Library" component={Library} options={{
-          tabBarLabel: 'Search',
+          tabBarLabel: 'Your Library',
           tabBarIcon: ({color, size}) => (
-            <Icon name="book" size={size} color='white' />
+            <Icon name="book" size={size} color={color} />
           )
           }}/>
       </Tab.Navigator>
