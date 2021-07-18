@@ -9,10 +9,8 @@ const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator 
-      tabBarOptions={{
-        activeTintColor: 'white',
+      <NavigationContainer>
+      <Tab.Navigator tabBarOptions={{
         tabStyle: {
           justifyContent: 'center', 
           backgroundColor: '#2B2B2B'
@@ -43,5 +41,5 @@ export default function App() {
           }}/>
       </Tab.Navigator>
     </NavigationContainer>
-  );
+  )
 }
