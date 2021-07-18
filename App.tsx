@@ -13,12 +13,20 @@ export default function App() {
       <Tab.Navigator tabBarOptions={{
         tabStyle: {
           justifyContent: 'center', 
-          backgroundColor: '#2B2B2B'
+          backgroundColor: '#2B2B2B',
         },
         labelStyle: {
           fontSize: 14
+        },
+        style: {
+          borderTopWidth: 0,
+          elevation: 0,
+          shadowOpacity: 0,
+          shadowOffset: {
+            width: 0, height: 0 
+          }
         }
-      }}>
+      }} >
         <Tab.Screen name="Home" component={Home} options={{
           tabBarLabel: "Home",
           tabBarIcon: ({color, size}) => (<Icon name="home-variant" size={size} color={color} />)
