@@ -18,8 +18,7 @@ export default function App() {
           backgroundColor: '#2B2B2B'
         },
         labelStyle: {
-          fontSize: 14,
-          fontWeight: 'bold'
+          fontSize: 14
         }
       }}>
         <Tab.Screen name="Home" component={Home} options={{
