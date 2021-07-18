@@ -16,29 +16,19 @@ export default function App() {
           backgroundColor: '#2B2B2B'
         },
         labelStyle: {
-          fontSize: 14,
-          color: 'white',
-          fontWeight: 'bold'
+          fontSize: 14
         }
       }}>
         <Tab.Screen name="Home" component={Home} options={{
-          tabBarLabel: 'Home',
-          tabBarIcon: ({color, size}) => (
-            <Icon name="home-variant" size={size} color={color} />
-          )
+          tabBarLabel: "Home",
+          tabBarIcon: ({color, size}) => (<Icon name="home-variant" size={size} color={color} />)
           }} />
         <Tab.Screen name="Search" component={Search} options={{
-          tabBarLabel: 'Search',
-          tabBarIcon: ({color, size}) => (
-            <Icon name="magnify" size={size} color={color} />
-          )
-          }} />
+          tabBarIcon: ({color, size}) => (<Icon name="magnify" size={size} color={color} />) 
+        }} />
         <Tab.Screen name="Your Library" component={Library} options={{
-          tabBarLabel: 'Your Library',
-          tabBarIcon: ({color, size}) => (
-            <Icon name="bookshelf" size={size} color={color} />
-          )
-          }}/>
+          tabBarIcon: ({color, size}) => (<Icon name="bookshelf" size={size} color={color} />)
+        }}/>
       </Tab.Navigator>
     </NavigationContainer>
   )
