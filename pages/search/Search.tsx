@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     button: {
-        paddingVertical: 22,
+        paddingVertical: 14,
         marginLeft: 20,
         marginRight: 20,
         borderRadius: 4,
