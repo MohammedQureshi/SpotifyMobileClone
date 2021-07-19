@@ -1,7 +1,8 @@
 import React from 'react'
 import { StatusBar, StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import Album from '../../components/album/Album';
+import CardPreview from '../../components/card/CardPreview';
+import Colors from '../../lib/Colors';
 
 function Home(){
     const styles = StyleSheet.create({
@@ -15,7 +16,7 @@ function Home(){
         background : {
             width: '100%',
             flex: 1,
-            backgroundColor: '#121212',
+            backgroundColor: Colors.BACKGROUND_COLOR,
             paddingTop: 20,
             paddingBottom: 20
         },
@@ -32,14 +33,14 @@ function Home(){
                 <View>
                     <Text style={[styles.text, styles.h1]}>Recently Played</Text>
                     <ScrollView horizontal={true}>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
-                        <Album text="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius arcu eu nibh facilisis, non blandit augue volutpat. Morbi pharetra." imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" type={CardPreview.Type.ARTIST} imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius arcu eu nibh facilisis, non blandit augue volutpat. Morbi pharetra." imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius arcu eu nibh facilisis, non blandit augue volutpat. Morbi pharetra." imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius arcu eu nibh facilisis, non blandit augue volutpat. Morbi pharetra." imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed varius arcu eu nibh facilisis, non blandit augue volutpat. Morbi pharetra." imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
+                        <CardPreview.Element title="Hello World" imageURL="https://www.flat-e.com/flate5/wp-content/uploads/cover.jpg" date={125125}/>
                     </ScrollView>
                 </View>
             </View>
