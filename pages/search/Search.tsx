@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, ScrollView, Pressable } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Button from '../../components/album/Button';
+import Button from '../../components/button/Button';
 
 function Search(){
     return(
