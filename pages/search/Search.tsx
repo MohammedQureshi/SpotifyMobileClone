@@ -8,7 +8,11 @@ function Search(){
         <ScrollView style={{ backgroundColor: '#121212', flex:1}}>
             <Text style={styles.header}>Search</Text>
             <Button />
-            <Text>Your top genres </Text>
+            <Text style={styles.genres}>Your top genres </Text>
+
+            <Text style={styles.genres}>Popular podcast categories </Text>
+
+            <Text style={styles.genres}>Browse all </Text>
         </ScrollView>
     )
 }
@@ -21,6 +25,12 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 45,
         fontWeight: 'bold'
+    },
+    genres: {
+        color: 'white',
+        fontSize: 18,
+        fontWeight: 'bold',
+        padding: 20
     }
 })
 
