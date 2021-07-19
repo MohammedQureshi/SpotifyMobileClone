@@ -16,12 +16,13 @@ export default function App() {
           backgroundColor: '#2B2B2B',
         },
         labelStyle: {
-          fontSize: 14
+          fontSize: 16,
         },
         style: {
           borderTopWidth: 0,
           elevation: 0,
           shadowOpacity: 0,
+          height: 80,
           shadowOffset: {
             width: 0, height: 0 
           }
