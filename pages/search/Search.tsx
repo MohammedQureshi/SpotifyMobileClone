@@ -1,5 +1,6 @@
 import React from 'react'
-import { StyleSheet, Text, ScrollView, Pressable } from 'react-native';
+import { StyleSheet, Text, ScrollView } from 'react-native';
+import Card from '../../components/card/Card';
 import Button from '../../components/button/Button';
 
 function Search(){
@@ -8,7 +9,7 @@ function Search(){
             <Text style={styles.header}>Search</Text>
             <Button />
             <Text style={styles.genres}>Your top genres </Text>
-
+            <Card passBackgroundColor='blue' />
             <Text style={styles.genres}>Popular podcast categories </Text>
 
             <Text style={styles.genres}>Browse all </Text>
