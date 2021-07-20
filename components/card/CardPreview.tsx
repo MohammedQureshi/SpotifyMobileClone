@@ -23,7 +23,6 @@ const cardPreviewStyle = StyleSheet.create({
         marginLeft: 10,
         backgroundColor: Colors.Card.backgroundColor,
         padding: 15,
-        flexWrap: 'wrap',
         borderRadius: 7
     },
     marginTop10 : {
