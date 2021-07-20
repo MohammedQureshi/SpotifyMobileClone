@@ -30,12 +30,12 @@ const styles = StyleSheet.create({
         width: 100
     },
     tinyLogo: {
-        width: 70,
-        height: 70,
+        width: 80,
+        height: 80,
         position: 'absolute',
         right: -20,
         bottom: -5,
-        transform: [{rotate: '27deg'}],
+        transform: [{rotate: '25deg'}],
       },
 })
 

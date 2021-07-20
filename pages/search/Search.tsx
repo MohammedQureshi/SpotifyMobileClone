@@ -15,8 +15,15 @@ function Search(){
                 <Card passBackgroundColor='#dc178c' title='Dance/Electric' image={url} />
             </View>
             <Text style={styles.genres}>Popular podcast categories </Text>
-
+            <View style={{flex: 1, flexDirection: 'row', paddingLeft: 10, paddingRight: 10}}>
+                <Card passBackgroundColor='#b1623a' title='Comedy' image={url} />
+                <Card passBackgroundColor='#e61d32' title='Sports & Recreation' image={url} />
+            </View>
             <Text style={styles.genres}>Browse all </Text>
+            <View style={{flex: 1, flexDirection: 'row', paddingLeft: 10, paddingRight: 10}}>
+                <Card passBackgroundColor='#25866a' title='Podcasts' image={url} />
+                <Card passBackgroundColor='#1f3265' title='Made For You' image={url} />
+            </View>
         </ScrollView>
     )
 }
