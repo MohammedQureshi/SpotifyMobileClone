@@ -13,7 +13,7 @@ interface CardPreviewProps {
     title?: string, // the title you want to add to the card,
     subtitle?: string // the subtitle you want to add to the card
     type?: CardPreviewType, // the card type (depending on type, this will render differently)
-    date?: number // the date the card was created
+    duration?: string // the duration that shows up when the type is PODCAST
 }
 
 // the card styling
@@ -47,6 +47,9 @@ const cardPreviewStyle = StyleSheet.create({
     bold : {
         fontWeight: 'bold'
     },
+    durationText : {
+        fontSize: 11
+    },
     defaultText: {
         color: Colors.WHITE
     }
@@ -58,7 +61,7 @@ const CardPreviewItem: React.FC<CardPreviewProps> = ({
     title = "", // the default text is blank
     subtitle = "", // the default sub title is blank
     type = CardPreviewType.PLAYLIST, // the default card type is playlist (as this is the most common type)
-    date = Date.now() // setting the default date to now.
+    duration = "" // setting the default duration
 }) => {
     const cardImageStyle = type !== CardPreviewType.ARTIST ? cardPreviewStyle.cardImage : [cardPreviewStyle.cardImage, cardPreviewStyle.round];
     return <View style={cardPreviewStyle.card}>
@@ -71,6 +74,7 @@ const CardPreviewItem: React.FC<CardPreviewProps> = ({
             <Text style={[cardPreviewStyle.greyText, cardPreviewStyle.marginTop10]} numberOfLines={2}>{ type == CardPreviewType.ARTIST ? 'Artist' : subtitle}</Text>
 
             {/** TODO: if the type is podcast we need to display the date underneath the card */}
+            { type === CardPreviewType.PODCAST ? <Text style={[cardPreviewStyle.whiteText, cardPreviewStyle.marginTop10, cardPreviewStyle.bold, cardPreviewStyle.durationText]} numberOfLines={1}>{duration}</Text>: null}
     </View>
 }
 
